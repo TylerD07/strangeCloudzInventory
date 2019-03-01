@@ -1,2 +1,2 @@
 # strangeCloudzInventory
-Simple Inventory List generator (more feature coming soon)
+Simple Inventory List generator (more features coming soon)
