@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />        
+        <meta name="viewport" content="width=1020" /> 
+
+        <title>Regions Online Banking - 
+    
+	Sign In
+
+</title>
+       
+        
+    
+        <link href="/Themes/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+        <link href="/Themes/RegionsTheme/regions.min.css" rel="stylesheet" type="text/css" />
+
+
+        
+        <style> .warning-message { background-color: #fff9e3; padding: 10px; } </style>
+    </head>
+    <body>
+        
+                <script type="text/javascript" src="/Scripts/jquery.min.js"></script>
+
+                <script type="text/javascript" src="/Scripts/jquery-ui.min.js"></script>
+
+                <script type="text/javascript" src="/Scripts/jquery.validate.min.js"></script>
+
+                <script type="text/javascript" src="/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+                <script type="text/javascript" src="/Scripts/main.min.js"></script>
+
+
+        <div id="contentWrapper" style="display: none">
+            
+            
+    <div class="page">        
+        
+        <div class="page-header">
+            <div>
+                <img src="/Themes/RegionsTheme/RegionsLogo.png"
+                     alt="Regions Online Banking" />
+            </div>
+        </div>
+
+        
+        <div class="page-body">
+            <div>
+                <div class="page-title">
+                    
+Regions Online Banking
+                </div>
+
+                
+
+                <div class="main-section">
+                        
+    <div class="sign-in-page">
+
+        <div class="page-column">
+            <div class="page-column-header">Existing Online Customers</div>
+
+            <div class="sign-in-box">
+<form action="/SignIn/Index?wa=wsignin1.0&amp;wtrealm=http%3A%2F%2Fonlinebanking.regions.com%2F&amp;wctx=rm%3D0%26id%3Dpassive%26ru%3D%2Faccounts%2Foverview&amp;wct=2019-04-08T18%3A06%3A40Z" autocomplete="off" class="form" method="post">                    <fieldset>
+                        <div class="item">
+                            <label for="UserName" class="editor-label">Online ID</label>
+                            <a href="https://onlinebanking.regions.com/customerservice/Recoveruserid" class="editor-link" tabindex="4">Forgot Online ID?</a>
+                            <div class="editor-field">
+                                <input id="UserName" maxLength="18" name="UserName" tabindex="1" type="text" value="" />
+                                <span class="field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <label for="Password" class="editor-label">Password</label>
+                            <a href="https://onlinebanking.regions.com/customerservice/forgottenpassword" class="editor-link" tabindex="5">Forgot Password?</a>
+                            <div class="editor-field">
+                                <input id="Password" maxLength="32" name="Password" tabindex="2" type="password" />
+                                <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+
+                        <div class="editor-controls">
+                            <input type="submit" class="orange-button" value="Submit" tabindex="3"
+                                   onclick="this.disabled=true; this.form.submit();return false;" />
+                        </div>
+                    </fieldset>
+</form>            </div>
+
+            <ol class="red-arrows">
+                <li>Please check that the “Caps Lock” or “Num Lock” key is off.</li>
+            </ol>
+        </div>
+
+        <div class="vertical-separator"></div>
+
+        <div class="page-column">
+            <div class="page-column-header">New Online Customers</div>
+
+            <div class="list-title">Enroll now to:</div>
+            <ol class="gray-arrows">
+                <li>Access your accounts online</li>
+                <li>Pay bills online</li>
+                <li>Send us a secure message</li>
+            </ol>
+
+            <div>
+                <a class="orange-button" tabindex="6" href="https://onlinebanking.regions.com/enrollment/home">Enroll</a>
+            </div>
+        </div>
+    </div>
+
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="page-footer">
+            <div>
+                <div>
+                    <img src="/Themes/RegionsTheme/EqualHousingLogo.gif"
+                         alt="Equal Housing Lender" />
+                    <span>Equal Housing Lender</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>Member FDIC</span>
+                </div>
+                <div>
+                    <span>&#169; 2019 Regions Bank. All rights reserved.</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>1-800-REGIONS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+        
+        <noscript>
+            <div class="warning-message">
+                Your browser is not capable of viewing this site because it does not support JavaScript or JavaScript may be disabled. Please enable JavaScript.
+            </div>
+        </noscript>
+        
+        
+        <div id="embeddedInFrame" style="display: none" class="warning-message">
+            You are viewing this page in a unauthorized frame window.
+            <br /><br />
+            For your security, please close all the browser windows now.
+        </div>
+        
+        
+        <div id="cookiesDisabled" style="display: none" class="warning-message">
+            Your browser is not capable of viewing this site because it does not support Cookies or Cookies may be disabled or blocked. Please enable Cookies.
+            <br /><br />
+            For your security, please close all the browser windows now.
+        </div>
+        
+        <script>
+            (function() {
+                
+                if (top.location.hostname != self.location.hostname) {
+                    document.getElementById("embeddedInFrame").style.display = "block";
+                    return;
+                }
+
+                
+                var cookiesDisabled = true;
+                if ("cookie" in document) {
+                    document.cookie = "TestCookie=testcookie;path=/;secure;";
+                    cookiesDisabled = (document.cookie.indexOf("TestCookie") == -1);
+                }
+                if (cookiesDisabled) {
+                    document.getElementById("cookiesDisabled").style.display = "block";
+                    return;
+                }
+
+                
+                document.getElementById("contentWrapper").style.display = "block";
+            })();
+        </script>
+        
+                
+                    <!-- START OF SmartSource Data Collector TAG v10.4.1 -->
+            <!-- Copyright (c) 2014 Webtrends Inc.  All rights reserved. -->
+            <script>
+                window.webtrendsAsyncInit = function() {
+                    var dcs = new Webtrends.dcs().init({
+                        dcsid: "dcs4b71fc10000gs8u88h5t1k_6n2i",
+                        domain: "statse.webtrendslive.com",
+                        timezone: -6,
+                        i18n: true,
+                        adimpressions: true,
+                        adsparam: "adimpressions",
+                        offsite: true,
+                        download: true,
+                        downloadtypes: "xls,doc,pdf,txt,csv,zip,docx,xlsx,rar,gzip",
+                        anchor: true,
+                        javascript: true,
+                        onsitedoms: "regions.com,bridgetrack.com,geezeo.com,regionstest.com",
+                        fpcdom: ".regions.com",
+                        plugins: {
+                            //hm:{src:"//s.webtrends.com/js/webtrends.hm.js"}
+
+                        }
+                    }).track();
+                };
+            </script>
+            <script type="text/javascript" src="/Scripts/webtrends.min.js"></script>
+            <noscript>
+                <img alt="dcsimg" id="dcsimg" width="1" height="1" src="//statse.webtrendslive.com/dcs4b71fc10000gs8u88h5t1k_6n2i/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=10.4.1&amp;dcssip=www.regions.com" />
+            </noscript>
+            <!-- END OF SmartSource Data Collector TAG v10.4.1 -->
+
+
+        
+                    <script type="text/javascript" src="https://onlinebanking.regions.com/custom/Assets/Scripts/global-overlays.js"></script>
+
+
+        
+                    <script type="text/javascript" src="https://nexus.ensighten.com/regions/regions-olb/Bootstrap.js"></script>
+
+
+        </body>
+    </html>
+
+
+
+
